@@ -10,6 +10,7 @@ public class Program
         var builder = WebApplication.CreateBuilder();
         builder.Services.AddDbContext<AppDbContext>(options =>
             options.UseInMemoryDatabase("MyDatabase"));
+        
         builder.Services.AddSwaggerGen();
         builder.Services.AddControllers();
         var app = builder.Build();
@@ -20,7 +21,6 @@ public class Program
         }
         
         app.MapControllers();
-        
         app.Run();
     }
 }
