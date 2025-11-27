@@ -1,0 +1,6 @@
+@Cs_DatabaseConnection_HostAddress = http://localhost:5296
+
+GET {{Cs_DatabaseConnection_HostAddress}}/
+Accept: application/json
+
+###
